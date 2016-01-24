@@ -12,7 +12,8 @@
 <body>
 	<div class="wrapper">
 <header>
-<h1>Mariona Mercadal</h1>
+<img src="img/me.png" alt="Mariona"/>
+<h1>Style Guide - Mariona Mercadal</h1>
 
 </header>
 
@@ -20,15 +21,15 @@
 <!-- Menú de navegación del sitio -->
 <nav>
 <ul class="navbar">
-  <li><a href="">Tipografía</a></li>
-  <li><a href="">Colores</a></li>
-  <li><a href="">Ilustraciones</a></li>
-  <li><a href="">Botones</a></li>
-  <li><a href="">Formulario</a></li>
+  <li><a href="#tipography">Tipografía</a></li>
+  <li><a href="#colors">Colores</a></li>
+  <li><a href="#illustrations">Ilustraciones</a></li>
+  <li><a href="#buttons">Botones</a></li>
+  <li class="last"><a href="#form">Formulario</a></li>
 </ul>
 </nav>
 
-<section>
+<section class="first" id="tipography" name="tipography">
 	<h1>Tipografía</h1>
 
 <ul class="headers">
@@ -52,7 +53,7 @@
 
 </section>
 
-<section>
+<section id="colors" name="colors">
 	<h1>Colores</h1>
 
 	<div class="circle softpink">
@@ -87,7 +88,7 @@
 
 </section>
 
-<section class="illustrations">
+<section class="illustrations" id="illustrations" name="illustrations">
 	<h1>Ilustraciones</h1>
 	<p class="text-illustrations"> Las ilustracions son el elemento principal de mi web portfolio. Se van desarrollando a lo largo de la página transformandose a medida que vamos haciendo scroll vertical. Se caracterizan por ser ilustraciones vectoriales planas, que juegan con una dualidad de colores oscuros y claros que van dando volumen a las figuras. El tema principal de los dibujos son Menorca, isla de la cual provengo, y que se ha convertido en el concepto de mi web. A continuación podremos ver una muestra de dos de las ilustraciones que más caracterizan la isla.</p>
 	<img src="img/faro.png" alt="faro"/>
@@ -95,19 +96,25 @@
 
 </section>
 
-<section>
+<section id="buttons" name="buttons">
 	<h1>Botones</h1>
-	<button class="b-down">Descargar CV</button>
-	<button class="b-down-2">Descargar CV</button>
-	<button class="b-send">Enviar</button>
-	<button class="b-send-2">Enviar</button>
 
-	<div class="back">
+	<div class="buttons-container no-back">
 	<button class="b-down">Descargar CV</button>
 	<button class="b-down-2">Descargar CV</button>
 	</div>
 
-	<div class="back-2">
+	<div class="buttons-container no-back-2">
+	<button class="b-send">Enviar</button>
+	<button class="b-send-2">Enviar</button>
+	</div>
+
+	<div class="buttons-container back">
+	<button class="b-down">Descargar CV</button>
+	<button class="b-down-2">Descargar CV</button>
+	</div>
+
+	<div class="buttons-container  back-2">
 	<button class="b-send">Enviar</button>
 	<button class="b-send-2">Enviar</button>
 	</div>
@@ -115,15 +122,27 @@
 
 </section>
 
-<section>
+<section id="form" name="form">
 	<h1>Formulario de contacto</h1>
+	<div class="form-field">
+	<label>Escribe tu nombre</label><input>
+	</div>
+	<div class="form-field">
+	<label>Escribe tu e-mail</label><input>
+	</div>
+	<div class="form-field">
+	<label>Escribe tu mensaje</label>
+		<textarea>Hola!</textarea>
+	</div>
+
+
 
 </section>
 
 
 
 <footer>
-	Mariona Style Guide &copy; 2016
+	<p>Mariona Style Guide &copy; 2016</p>
 </footer>
 
 </div>
